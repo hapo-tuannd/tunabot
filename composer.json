@@ -18,8 +18,15 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^7.0",
         "laravel/helpers": "^1.4",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "gundamew/botman-driver-line": "master"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/hapo-tuannd/botman-driver-line"
+        }
+    ],
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
         "filp/whoops": "~2.0",
