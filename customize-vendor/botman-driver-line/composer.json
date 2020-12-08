@@ -1,0 +1,43 @@
+{
+    "name": "gundamew/botman-driver-line",
+    "license": "MIT",
+    "description": "LINE driver for BotMan",
+    "keywords": [
+        "Bot",
+        "BotMan",
+        "LINE"
+    ],
+    "homepage": "http://github.com/gundamew/botman-driver-line",
+    "authors": [
+        {
+            "name": "Bing-Sheng Chen",
+            "email": "gundamew@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "botman/botman": "~2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7",
+        "mockery/mockery": "^1.1",
+        "illuminate/support": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "BotMan\\Drivers\\Line\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BotMan\\Drivers\\Line\\Providers\\LineServiceProvider"
+            ]
+        }
+    }
+}
